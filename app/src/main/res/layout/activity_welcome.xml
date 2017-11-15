@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/slika4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:textSize="70dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:textSize="70dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:textSize="70dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:textSize="70dp"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/strelica_spisak_igraca"
+        />
+
+        <ImageView
+            android:id="@+id/historija_kluba_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/strelica_historija_kluba"
+            android:layout_marginTop="-60dp"
+            />
+
+        <ImageView
+            android:id="@+id/o_aplikaciji_button"
+            android:layout_marginTop="-60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/strelica_o_aplikaciji"
+            />
+        <ImageView
+            android:id="@+id/najznacajnije_licnosti_button"
+            android:layout_marginTop="-60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/strelica_najznacajnije_licnosti"
+            />
+
+    </LinearLayout>
+</LinearLayout>

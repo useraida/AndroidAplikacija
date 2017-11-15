@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:layout_margin="16dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:text= "@string/licnost_naziv_label"/>
+
+    <EditText
+        android:id="@+id/licnost_naziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/holo_red_dark"
+        android:hint="@string/licnost_naziv_hint"/>
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:text="@string/licnost_detalji_label"/>
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:text="@string/licnost_mjesto_rodjenja_label"
+        />
+    <EditText
+        android:id="@+id/licnost_mjestoR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite mjesto rodjenja"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/licnost_datum_rodjenja_label"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:id="@+id/licnost_datumR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite datum rodjenja"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/holo_red_dark"
+        />
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/licnost_znacajni_podaci_label"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:id="@+id/licnost_podaci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite znacajne podatke o ovoj osobi"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/holo_red_dark"
+        />
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

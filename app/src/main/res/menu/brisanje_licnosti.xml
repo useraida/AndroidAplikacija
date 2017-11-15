@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/izbrisi_licnost"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="@string/izbrisi_licnost"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

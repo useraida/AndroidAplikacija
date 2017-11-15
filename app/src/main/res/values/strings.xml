@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Za fanove GGMU</string>
+    <string name="igrac_naziv_hint"> Unesite ime i prezime igraca</string>
+    <string name="igrac_naziv_label">Ime i prezime igraca</string>
+    <string name="licnost_naziv_hint">Unesite ime i prezime </string>
+    <string name="licnost_naziv_label">Ime i prezime </string>
+    <string name="igrac_mjesto_rodjenja_label">Mjesto rodjenja</string>
+    <string name="licnost_mjesto_rodjenja_label">Mjesto rodjenja</string>
+    <string name="igrac_datum_rodjenja_label">Datum rodjenja</string>
+    <string name="licnost_datum_rodjenja_label">Datum rodjenja</string>
+    <string name="licnost_znacajni_podaci_label">Znacajni podaci</string>
+    <string name="igrac_ulazak_u_klub_label">Datum ulaska u klub</string>
+    <string name="pozicija_igrac">Pozicija igraca</string>
+    <string name="igrac_detalji_label"> Detalji </string>
+    <string name="licnost_detalji_label">Detalji </string>
+    <string name="igrac_solved_label"> Prvi tim </string>
+    <string name="datum_picker_naziv">Datum: </string>
+    <string name="novi_igrac">Novi igrac</string>
+    <string name="nova_licnost">Nova licnost</string>
+    <string name="prikazi_podnaslov">Prikazi podnaslov</string>
+    <string name="sakrij_podnaslov">Sakrij podnaslov</string>
+    <string name="izbrisi_igraca">Brisanje igraca</string>
+    <string name="izbrisi_licnost">Brisanje licnosti</string>
+    <string name="uvodni_dio_historija">Manchester United je engleski nogometni klub koji svoje domaće utakmice
+        igra na stadionu Old Trafford u Manchesteru. Jedan je od najuspješnijih engleskih i europskih nogometnih
+        klubova sa 20 naslova prvaka, 12 pobjeda u engleskom kupu i tri naslova europskih prvaka.</string>
+
+    <string name="uvodni_dio2_historija">Klub je osnovan pod imenom Newton Heath LYR F.C. 1878. kao ekipa radnika Lancashire i
+        Yorkshire želježnica u Newton Heathu. Igrači su tada nosili zeleno-zlatne dresove. Petnaest godina su igrali na malom
+        igralištu na North Roadu, pored buduće željezničke postaje Manchester Piccadilly, prije nego što su se 1893.
+        preselili na Bank Street u obližnjem gradu Claytonu. Godinu prije, klub se počeo natjecati u nogometnoj ligi te je
+        raskinuo veze sa željeznicom, postavši neovisno poduzeće i skrativši ime u Newton Heath F.C.
+        1902. godine klub je bio na rubu bankrota, sa dugom od 2.500 funti. To je rezultiralo zatvaranjem stadiona. Upravo u
+        vrijeme kad je klub trebao biti ugašen, John Henry Davies, predsjednik firme Manchester Breweries je odlučio uložiti
+        novac u klub i tako ga spasio od gašenja. Ubrzo je na sastanku uprave odlučeno da klub promijeni ime. Među prijedlozima
+        su bili Manchester Central i Manchester Celtic, ali je na kraju, na prijedlog italijanskog imigranta Loisa Rocce,
+        odlučeno da se klub zove Manchester United. Tako je Manchester United počeo službeno postojati 26. aprila 1902. godine.
+        Za nove boje kluba su izabrane crvena i bijela. Prvi naslov prvaka osvajaju 1907./08.
+    Osvojili su svoje drugo prvenstvo sezone 1910./11. U međuvremenu se klub preselio na novi stadion, Old Trafford. Prvu utakmicu
+        na novom stadionu odigrali su 19. februara 1910. protiv Liverpoola.
+        Idućih deset godina, klub je postupno slabio te su 1922. godine ispali u drugu ligu. Godine 1925. se vraćaju u prvu ligu,
+        međutim, već 1931. ponovno ispadaju u drugu. Klub je došao do najniže pozicije u svojoj historiji 1934. godine, kada su
+        bili 20. u drugoj ligi. Još su jednom ušli u prvu ligu, te odmah ispali, i opet ušli u prvu ligu, te su osigurali
+        daljnje igranje u prvoj ligi, osvojivši 14. mjesto sezone 1938./39. Godine 1945. Matt Busby postaje trener kluba s Old Trafforda.
+         Klub je tri godine za redom bio drugoplasiran klub engleskog prvenstva, 1947., 1948. i 1949., a 1948. su osvojili FA kup.
+    </string>
+    <string name="munchenska_tragedija">
+        Dana 6. februara 1958. avion s Unitedovim igračima, koji su se vraćali s utakmice Kupa prvaka u Beogradu, srušio se za
+        vrijeme polijetanja iz Münchena. U nesreći je živote izgubilo osam igrača: Geoff Bent, Roger Byrne, Eddie Colman,
+        Duncan Edwards, Mark Jones, David Pegg, Tommy Taylor i Liam "Billy" Whelan, te još petnaest putnika, uključujući Unitedove
+        članove osoblja: Waltera Crickmera, Berta Whalleyja i Toma Curryja.
+        Nakon tragedije, bilo je glasina da će se United povući iz svih natjecanja, što se ipak nije dogodilo. Jimmy Murphy
+        je privremeno postao trener dok se Busby ne oporavi od ozljeda, te je klub nastavio igrati s preostalim igračima.
+        Unatoč nesreći, United je ponovno došao da finala FA kupa, gdje je poražen od Boltona. Na kraju sezone UEFA je ponudila
+        mogućnost engleskom nogometnom savezu da se i United i aktualni prvaci Wolverhampton takmiče u Kupu prvaka, u spomen na
+        žrtve, no savez je to odbio. Manchester je iduće sezone osvojio drugo mjesto u prvenstvu, što je bio odličan rezultat za
+        ekipu koja je izgubila 9 igrača.
+    </string>
+    <string name="naslov_tekst1">
+        1960. - 1986.
+    </string>
+    <string name="tekst1">
+        Period 60-tih bio jako uspješan za Manchester United. Busby je počeo sa stvaranjem nove momčadi početkom 1960.-ih.
+        Klub je 1963. osvojio FA kup, iako su u prvenstvu zauzeli tek 19. mjesto. Osvajanje FA kupa je bio veliki poticaj za
+        ekipu te su iduće sezone zauzeli 2. mjesto, a 1965. i 1967. su osvojili prvenstvo. United je 1968. postao prvi engleski
+        klub koji je osvojio Kup prvaka, nakon što su u finalu s 4:1 pobijedili Benficu, koju je predvodio jedan od najboljih
+        portugalskih igrača svih vremena, Eusebio.
+        Nakon 24 godine na klupi Uniteda, Matt Busby je 1969. napustio klub, a zamijenio ga je dotadašnji trener rezervne
+        ekipe i bivši Unitedov igrač Wilf McGuinness.
+        1975. su stigli do finala FA kupa, u kojem su poraženi od Southamptona. Do finala su došli i 1977. godine, te su ga
+        ovaj put i osvojili, pobijedivši Liverpool s 2:1.
+        United je osvojio FA kup dvaput u tri godine, 1983. i 1985. Sezonu 1985./86. počeli su izvanredno, pobijedivši u
+        prvih deset ligaških utakmica, pa su već u oktobru imali deset bodova više od najbližih pratitelja. Međutim, forma
+        ekipe je padala te su sezonu završili na 4. mjestu. Loša forma nastavila se i sljedeće sezone, klub se našao na rubu
+        ispadanja iz prve lige, te je Atkinson u novembru 1986. dobio otkaz.
+    </string>
+    <string name="era_fergusona">
+        Era Alexa Fergusona
+    </string>
+    <string name="text_era_fergusona">
+        Alex Ferguson je krajem 1986. godine stigao iz škotskog Aberdeena te je doveo klub do 11. pozicije na kraju sezone.
+        Iduće sezone (1987./88.), United je zauzeo drugo mjesto, a Brian McClair je postao prvi igrač nakon Besta koji je
+        postigao 20 golova u sezoni. Međutim, United nije briljirao iduće dvije sezone, a mnogi igrači koje je doveo Ferguson
+        nisu ispunili očekivanja navijača. Alex Ferguson je bio na rubu otkaza početkom 1990. godine, ali ga je spasio gol Marka
+        Robinsa, kojim je United tijesno pobijedio 1:0 Nottingham Forest u trećoj rundi FA kupa. To je dalo poticaj igračima,
+        pa su te sezone i osvojili kup, pobijedivši u finalu Crystal Palace.
+        Manchester United je osvojio svoj prvi Kup pobjednika kupova 1991. godine, nakon što su u finalu savladali španjolsku
+        Barcelonu s 2:1, a oba pogotka postigao je Mark Hughes, bivši igrač Barcelone. Iduće sezone United je bio na najboljem
+        putu ka još jednom naslovu engleskog prvaka, ali je pad forme krajem sezone bio dovoljan rivalu Leedsu da ih pretekne na
+        ljestvici. U međuvremenu je klub dospio na Londonsku burzu s vrijednošću od 47 milijuna funti, čime je privukao nove
+        ulagače.
+        Dolazak Erica Cantone u novembru 1992. pokazao se kao ključan potez. Cantona je s Garyjem Pallisterom, Denisom Irwinom, Paulom Inceom
+        i nadolazećom zvijezdom Ryanom Giggsom osvojio naslov prvaka 1993. Bio im je to prvi naslov prvaka nakon 1967. godine, te je bilo razumljivo
+        veliko slavlje Manchesterovih navijača. Iduće sezone po prvi put u historiji su osvojili dvostruku krunu (ligu i FA kup).
+        Naslov su obranili iduće sezone potpomognuti karizmatičnim Ircem Royem Keaneom, koji je stigao iz Notthingham Foresta,
+        te je ubrzo postao i kapetan. Iste godine, klub je tugovao zbog smrti legenadarnog trenera i predsjednika kluba Sir Matta
+        Busbyja, koji je preminuo 20. januara 1994.
+
+         Sezone 1994./95., Cantona je dobio osam mjeseci suspenzije zbog fizičkog napada na navijača Crystal Palacea, koji ga je
+        uvrijedio na rasnoj osnovi. Iduće sezone, osvajanjem drugog mjesta u prvenstvu te porazom u finalu FA kupa od Evertona,
+        United je završio sezonu kao dvostruki viceprvak, u ligi i u kupu. Ferguson je tada razljutio navijače prodajom ključnih
+        igrača, koje je zamijenio igračima iz juniorske ekipe, među kojima su bili David Beckham, Gary Neville, Phil Neville i
+        Paul Scholes. Novi igrači, od kojih su neki postali i standardni reprezentativci su odigrali iznenađujuće dobro te je
+        United opet osvojio dvostruku krunu 1996. To je bio prvi put da je neki engleski klub drugi put osvojio dvostruku krunu,
+        te je taj pothvat prozvan "Double Double".
+
+        Iduće godina, nakon osvajanja novog naslova prvaka, Eric Cantona se, u dobi od 30 godina, povukao iz nogometa.
+        Cantona je kod navijača postigao legendarni status, i konstantno je od njih proglašavan najboljim igračem Uniteda
+        svih vremena.
+
+        Sezonu poslije (1997./98.) "crveni vragovi" su dobro započeli prvenstvo, ali su na kraju završili na drugom mjestu,
+        iza Arsenala.
+    </string>
+    <string name="trostuka_kruna_naslov">
+        Trostruka kruna(1998.-99.)
+    </string>
+    <string name="trostruka_kruna">
+        Sezona 1998./99. bila je za Manchester United najuspješnija sezona u historiji, kada je postao prvi engleski klub koji
+        je osvojio trostruku krunu - osvojivši Premiership, FA kup i Ligu prvaka iste sezone. Ligu su osvojili u zadnjem kolu,
+        pobjedom 2:1 protiv Tottenhama. To je bio prvi korak prema "tripleu", koji je Ferguson proglasio najtežim. U finalu FA kupa
+        pobijedili su Newcastle s 2:0, pogotcima Sheringhama i Scholesa. U posljednjoj utakmici sezone, United je u finalu Lige
+        prvaka pobijedio Bayern München. Iako je do 90. minute gubio 1:0, United je s dva pogotka u sudačkoj nadoknadi
+        (Sheringham i Ole Gunnar Solskjær) ostvario jedan od najvećih povrataka u historiji nogometa. Kapetan Manchestera,
+        legendarni vratar Peter Schmeichel je podigao pokal namijenjen osvajaču Lige prvaka. Ferguson je tada zbog svojih zasluga
+        od kraljice dobio titulu Sir. Manchester United je rekordnu godinu završio osvajanjem Interkontinentalnog kupa,
+        pobijedivši u Tokiju brazilski Palmeiras 1:0.
+    </string>
+    <string name="nakon_trostuke_krune_naslov">
+        Nakon trostruke krune (1999. - danas)
+    </string>
+    <string name="nakon_trostruke_krune_text">
+        United je osvojio ligu 2000. i 2001. godine, ali su novinari te sezone proglasili neuspješnima, budući da klub nije
+        uspio ponoviti osvajanje Lige prvaka. Godine 2000., Manchester United je postao jedan od 14 osnivača grupe G-14 -
+        grupe vodećih europskih klubova. Ferguson je počeo primjenjivati defanzivniju taktiku, što je otežalo posao Unitedovim
+        suparnicima u Europi, ali nije donijelo posebne uspjehe. Sezonu 2002. klub završava prvenstvo na trećem mjestu, a iduće
+        sezone su ponovno osvojili prvenstvo. Nakon sukoba s Fergusonom, najveća zvijezda David Beckham odlazi u madridski Real.
+        2004. su osvojili FA kup, pobijedivši u finalu Millwall.
+        United je loše krenuo u sezonu 2005./06., a Roy Keane je napustio klub otišavši u Celtic, nakon što je javno kritizirao
+        svoje bivše suigrače. Klub se, po prvi put u deset godina, nije uspio kvalificirati u drugi krug Lige prvaka, nakon što
+        su izgubili posljednji susret u grupi protiv portugalske Benfice. Sezona je bila obilježena ozljedama ključnih igrača,
+        među kojima su bili Gabriel Heinze, Alan Smith, Giggs i Scholes.
+        Nakon četiri godine, 6. maja 2007. United ponovno osvaja prvenstvo.
+        Sezona 2007./08. bila je jedna od najuspješnijih u klupskoj historiji. Zahvaljujući ponajviše fenomenalnoj formi
+        Cristiana Ronalda (31 pogodak u prvenstvu), Manchester United je uspio obraniti naslov engleskog prvaka s dva
+        boda prednosti pred novim rivalima Chelsea. Isti klubovi sastali su se u moskovskom finalu Lige prvaka, dana 21.
+        maja 2008. United je u dramatičnom finalu slavio nakon boljeg izvođenja jedanaesteraca.
+        8. augusta 2010, Manchester United poražen je od strane Chelsea sa 3–1 u borbi za pobjedu FA Community Shield-s(
+        engleski superkup).
+        Kampanja 2010-11 bila je uspješna, a Manchester United je obezbjedio rekordnu 19. titulu lige sa pobjedom od 1-1
+        nad Blackburnom 14. maja 2011.
+        U sezoni 2011.-12., Manchester United je izbačen iz Kupa lige od strane Crystal Palace u petom kolu. Samo sedam dana
+        kasnije izbačeni su iz Lige šampiona u grupnoj fazi nakon poraza od Bazela, te po prvi put odlaze u Evropsku ligu.
+        U januaru, Manchester United je također ispao i iz FA kupa u četvrtom kolu od strane Liverpoola.
+        U sezoni 2012.-2013. Manchester United je izbačen iz Kupa lige od strane Chelsea. Ali općenito 2012.-2013.
+        bila je uspješna ua United jer su osvojili rekordnu 20-titulu lige, pobijedivši Aston Villu 22. aprila 2013.
+        U maju, 2013., neposredno prije kraja sezone Premier lige, Ferguson je objavio njegovo penzionisanje nakon 27 godina
+        rada kao meanadžer Manchester Uniteda. Njegov nasljednik je bio David Moyes iz Evertona. Ferguson ostaje kao
+        direktor i ambasador kluba. 19. maja 2013. Ferguson je posljednji put vodio Manchester protiv West Bromwich Albiona.
+        Nakon što David Moyes nije uspio da vodi klub u kvalifikacijama Lige šampiona, otpušten je prije kraja prve sezone.
+        Holandski menadžer Louis van Gaal imenovan je za stalnu zamjenu Moyes-a 19. maja 2014. Za vrijeme Louis van Gaal-a
+        United je doveo mnogo istaknutih igrača i vratio se u Ligu šampiona kao četvrti u premier ligi. U njegovoj drugoj sezoni
+        United je završio kao peti na tabeli ispod Manchester City-a, i samim tim se nisu kvalifikovali u Ligu šampiona,
+        ali su te godine osvojili 2016 FA Cup.  Međutim, odbor je odlučio da nije postignut dovoljan napredak, te je Van Gaal
+        otpušten 23. maja 2016. Zamijenio ga je dvostruki evropski šampion i bivši šef Chelsea José Mourinho 27. maja 2016.
+        godine. Mourinho je postao četvrti menadžer Uniteda (uključujući Giggs) nakon penzionisanja Fergusona.
+    </string>
+    <string name="o_aplikaciji">
+        Ova aplikacija namijenjena je za sve fanove jednog od najvećih klubova - Manchester United. Napravljena je sa
+        ciljem da navijači znaju za neke najbitnije historijske činjenice, kao i da znaju koje su to bile najznačajnije
+        historijske ličnosti do danas i zbog čega su postale najznačajnije ličnosti.
+        Također ovu aplikaciju korisnici mogu da uređuju, a pod tim se podrazumijeva da ukoliko u budućnosti neko od igrača
+        ili trenera postanu jako značajni, korisnik može da doda tu osobu i napise najznačajnije karakteristike o njoj.
+        Također u ovoj aplikaciji se nalaze igrači koji trenutno igraju u Manchester Unitedu. Ukoliko neki od igrača ode iz
+        kluba korisnik tog igrača moze da briše, te ukoliko dođe novi igrač u ovaj klub, korisnik dodaje tog igrača. Na ovaj
+        način čuvaju se podaci o igračima Uniteda, najznačajnijim ličnostima i te podatke korisnik stalno ažurira.
+        Dakle, ova aplikacija je napravljena s ciljem da korisnici uvijek imaju spisak igrača koji su trenutno u Unitedu,
+        tako što će ažurirati bazu sa igračima, zatim da imaju spisak najznačajnijih ličnosti Uniteda, kao i njihovo
+        ažuriranje u bazu.
+    </string>
+    <plurals name="podnaslov_mnozina">
+        <item quantity="one">%1$d igrac</item>
+        <item quantity="other">%1$d igraca</item>
+    </plurals>
+</resources>
