@@ -6,10 +6,10 @@
     <string name="licnost_naziv_label">Ime i prezime </string>
     <string name="igrac_mjesto_rodjenja_label">Mjesto rodjenja</string>
     <string name="licnost_mjesto_rodjenja_label">Mjesto rodjenja</string>
-    <string name="igrac_datum_rodjenja_label">Datum rodjenja</string>
+    <string name="igrac_datum_rodjenja_label">Klikom na dugme unesite datum rodjenja igraca</string>
     <string name="licnost_datum_rodjenja_label">Datum rodjenja</string>
     <string name="licnost_znacajni_podaci_label">Znacajni podaci</string>
-    <string name="igrac_ulazak_u_klub_label">Datum ulaska u klub</string>
+    <string name="igrac_ulazak_u_klub_label">Klikom na dugme unesite datum ulaska u klub</string>
     <string name="pozicija_igrac">Pozicija igraca</string>
     <string name="igrac_detalji_label"> Detalji </string>
     <string name="licnost_detalji_label">Detalji </string>

@@ -116,7 +116,8 @@ public class NajLicnostLab {
         ContentValues values = new ContentValues();
         values.put(NajLicnostDbSchema.NajLicnostTable.Kolone.UUID, najLicnost.getId().toString());
         values.put(NajLicnostDbSchema.NajLicnostTable.Kolone.ImeIPrezime, najLicnost.getNaziv());
-        values.put(NajLicnostDbSchema.NajLicnostTable.Kolone.DatumRodjenja, najLicnost.getDatumRodjenja());
+        values.put(NajLicnostDbSchema.NajLicnostTable.Kolone.DatumRodjenja, najLicnost.getDatumRodjenja().getTime());
+        values.put(NajLicnostTable.Kolone.DatumRodjenjaString, najLicnost.getDatumRodjenjaString());
         values.put(NajLicnostDbSchema.NajLicnostTable.Kolone.MjestoRodjenja, najLicnost.getMjestoRodjenja());
         values.put(NajLicnostDbSchema.NajLicnostTable.Kolone.ZnacajniPodaci, najLicnost.getZnacajniPodaci());
 

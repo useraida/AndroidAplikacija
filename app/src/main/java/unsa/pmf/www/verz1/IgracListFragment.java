@@ -39,6 +39,8 @@ public class IgracListFragment extends Fragment {
     {
         View view = inflater.inflate(R.layout.fragment_igrac_list, container, false);
         mIgracRecyclerView = (RecyclerView) view.findViewById(R.id.igrac_recycler_view);
+        //LayoutManager pozicionira items na ekran, i definise kako radi skrolanje
+        //u slucaju da zaboravimo postaviti LayoutManager RecyclerView ne bi mogao raditi
         mIgracRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         if(savedInstanceState != null)
@@ -51,6 +53,21 @@ public class IgracListFragment extends Fragment {
         return view;
     }
 
+    // kada izmjenimo neke podatke u IgracPagerActivity, i kliknemo na back button, ti podaci ne bi bili izmjenjeni
+    // na IgracListFragmentu ukoliko ne stavimo updateUI() unutar metode onResume()
+    // Adapter od RecyclerView-a mora biti informisan o podacima koji su se izmijenili, tako da on moze reloadati listu
+    // Kada IgracListFragment startuje instancu  IgracPagerActivity-a, IgracPagerActivity je na vrhu steka, sto znaci da se
+    // tada instanca od IgracListActivity pauzira i stopira a koja je prethodno bila na vrhu steka.
+    // Kada korisnik klikne back button da se vrati nazad na listu, IgracPagerActivity je tada skinuta sa steka i unistena
+    // i tada IgracListActivity je started and resumed
+    /*
+    Why
+    override onResume() to update the RecyclerView and not onStart()? You cannot assume
+     that your activity will be stopped when another activity is in front of it. If the other activity is transparent,
+     your activity may just be paused. If your activity is paused and your update code is in onStart(), then
+     the list will not be reloaded. In general, onResume() is the safest place to take action to update a
+    fragment’s view.
+    */
     @Override
     public void onResume()
     {
@@ -62,6 +79,7 @@ public class IgracListFragment extends Fragment {
     public void onSaveInstanceState(Bundle outState)
     {
         super.onSaveInstanceState(outState);
+        // prilikom rotacije da se sacuva broj igraca
         outState.putBoolean(SAVED_PODNASLOV_VISIBLE, mPodnaslovVisible);
     }
 
@@ -126,6 +144,7 @@ public class IgracListFragment extends Fragment {
             mIgracRecyclerView.setAdapter(mAdapter);
         }else{
             mAdapter.setIgraci(igraci);
+            // ukoliko su izmjenjeni odredjeni podaci u IgracPagerActivity da se izmjene u listi, tj ime igraca konkretno
             mAdapter.notifyDataSetChanged();
         }
         azurirajPodnaslov();
@@ -134,7 +153,6 @@ public class IgracListFragment extends Fragment {
     private class IgracHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         private TextView mNazivTextView;
-     //   private TextView mDatumTextView;
         private Igrac mIgrac;
 
         public IgracHolder(LayoutInflater inflater, ViewGroup parent)
@@ -143,14 +161,12 @@ public class IgracListFragment extends Fragment {
             itemView.setOnClickListener(this);
 
             mNazivTextView = (TextView) itemView.findViewById(R.id.igrac_naziv);
-          //  mDatumTextView = (TextView) itemView.findViewById(R.id.igrac_datum);
         }
 
         public void bind(Igrac igrac)
         {
             mIgrac = igrac;
             mNazivTextView.setText(mIgrac.getNaziv());
-           // mDatumTextView.setText(mIgrac.getDatum().toString());
         }
 
         @Override

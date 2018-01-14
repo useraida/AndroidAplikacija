@@ -34,6 +34,50 @@
         android:textColor="@android:color/holo_red_dark"
         android:hint="@string/igrac_naziv_hint"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="?android:listSeparatorTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Slika igraca: "
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    />
+                <Button
+                    android:id="@+id/izaberi_sliku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/crvena_boja"
+                    android:textColor="@android:color/white"
+                    android:text="Izaberi sliku"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                  >
+
+                    <ImageView
+                        android:id="@+id/izabrana_slika"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
     <TextView
         style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"
@@ -75,14 +119,12 @@
         android:textSize="15sp"
         android:textColor="@android:color/black"
         />
-    <EditText
-        android:id="@+id/igrac_datumR"
+    <Button
+        android:id="@+id/datum_rodjenja_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Unesite datum rodjenja"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:textColorHint="@android:color/darker_gray"
-        android:textColor="@android:color/holo_red_dark"
+        android:backgroundTint="@color/crvena_boja"
+        android:textColor="@android:color/white"
         />
 
     <TextView
@@ -93,15 +135,14 @@
         android:textSize="15sp"
         android:textColor="@android:color/black"
         />
-    <EditText
-        android:id="@+id/igrac_datumU"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Unesite datum ulaska u klub"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:textColorHint="@android:color/darker_gray"
-        android:textColor="@android:color/holo_red_dark"
-        />
+
+     <Button
+         android:id="@+id/datum_ulaska_u_klub_button"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:backgroundTint="@color/crvena_boja"
+         android:textColor="@android:color/white"/>
+
     <TextView
         style="?android:listSeparatorTextViewStyle"
         android:layout_width="match_parent"

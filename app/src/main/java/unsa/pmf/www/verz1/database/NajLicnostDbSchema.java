@@ -14,6 +14,7 @@ public class NajLicnostDbSchema {
             public static final String UUID = "uuid";
             public static final String ImeIPrezime = "ime_i_prezime";
             public static final String DatumRodjenja = "datum_rodjenja";
+            public static final String DatumRodjenjaString = "datum_rodjenja_string";
             public static final String MjestoRodjenja = "mjesto_rodjenja";
             public static final String ZnacajniPodaci = "znacajni_podaci";
         }

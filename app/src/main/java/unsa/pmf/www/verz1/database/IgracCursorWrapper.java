@@ -28,23 +28,27 @@ public class IgracCursorWrapper extends CursorWrapper {
     {
         String uuidString = getString(getColumnIndex(IgracTable.Kolone.UUID));
         String naziv = getString(getColumnIndex(IgracTable.Kolone.ImeIPrezime));
-        String datumRodjenja = getString(getColumnIndex(IgracTable.Kolone.DatumRodjenja));
         String mjestoRodjenja = getString(getColumnIndex(IgracTable.Kolone.MjestoRodjenja));
-        String datumUlaskaUKlub = getString(getColumnIndex(IgracTable.Kolone.DatumUlaskaUKlub));
+        long datumRodjenja = getLong(getColumnIndex(IgracTable.Kolone.DatumRodjenja));
+        long datumUlaskaUKlub = getLong(getColumnIndex(IgracTable.Kolone.DatumUlaskaUKlub));
         String pozicijaIgraca = getString(getColumnIndex(IgracTable.Kolone.PozicijaIgraca));
         String prethodniKlub = getString(getColumnIndex(IgracTable.Kolone.PrethodniKlub));
-        long datum = getLong(getColumnIndex(IgracTable.Kolone.Datum));
         int isPrviTim = getInt(getColumnIndex(IgracTable.Kolone.PrviTim));
+        String datumRodjenjaString = getString(getColumnIndex(IgracTable.Kolone.DatumRodjenjaString));
+        String datumUlaskaUKlubString = getString(getColumnIndex(IgracTable.Kolone.DatumUlaskaUKlubString));
+        byte[] slika = getBlob(getColumnIndex(IgracTable.Kolone.Slika));
 
         Igrac igrac = new Igrac(UUID.fromString(uuidString));
         igrac.setNaziv(naziv);
-        igrac.setDatumRodjenja(datumRodjenja);
         igrac.setMjestoRodjenja(mjestoRodjenja);
-        igrac.setDatumUlaskaUKlub(datumUlaskaUKlub);
+        igrac.setDatumRodjenja(new Date(datumRodjenja));
+        igrac.setDatumUlaskaUKlub(new Date(datumUlaskaUKlub));
         igrac.setPozicijaIgraca(pozicijaIgraca);
         igrac.setPrethodniKlub(prethodniKlub);
-        igrac.setDatum(new Date(datum));
         igrac.setPrviTim(isPrviTim != 0);
+        igrac.setDatumRodjenjaString(datumRodjenjaString);
+        igrac.setDatumUlaskaUKlubString(datumUlaskaUKlubString);
+        igrac.setSlika(slika);
 
         return igrac;
     }

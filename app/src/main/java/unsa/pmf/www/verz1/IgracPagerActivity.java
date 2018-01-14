@@ -54,6 +54,9 @@ public class IgracPagerActivity extends AppCompatActivity {
             }
         });
 
+        // kada kliknemo na nekog igraca, koji je na poziciji 4 npr, prikazati ce se opet prvi igrac
+        // zato sto ViewPager po defaultu prikazuje prvog igraca u PagerAdapteru
+        // zato ovdje koristimo mViewPager.setCurrentItem(), da ViewPager postavi index na trenutnog igraca koji je kliknut
         for(int i = 0; i < mIgraci.size(); i++)
         {
             if(mIgraci.get(i).getId().equals(igracId))

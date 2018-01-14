@@ -10,7 +10,9 @@ import java.util.UUID;
 public class NajLicnost {
     private UUID mId;
     private String mNaziv;
-    private String mDatumRodjenja;
+  //  private String mDatumRodjenja;
+    private Date mDatumRodjenja;
+    private String mDatumRodjenjaString;
     private String mMjestoRodjenja;
     private String mZnacajniPodaci;
 
@@ -21,6 +23,7 @@ public class NajLicnost {
     public NajLicnost(UUID id)
     {
         mId = id;
+        mDatumRodjenja = new Date();
     }
 
     public UUID getId() {
@@ -35,13 +38,13 @@ public class NajLicnost {
         mNaziv = naziv;
     }
 
-    public String getDatumRodjenja() {
+  /*  public String getDatumRodjenja() {
         return mDatumRodjenja;
     }
 
     public void setDatumRodjenja(String datumRodjenja) {
         mDatumRodjenja = datumRodjenja;
-    }
+    }*/
 
     public String getMjestoRodjenja() {
         return mMjestoRodjenja;
@@ -57,5 +60,21 @@ public class NajLicnost {
 
     public void setZnacajniPodaci(String znacajniPodaci) {
         mZnacajniPodaci = znacajniPodaci;
+    }
+
+    public Date getDatumRodjenja() {
+        return mDatumRodjenja;
+    }
+
+    public void setDatumRodjenja(Date datumRodjenja) {
+        mDatumRodjenja = datumRodjenja;
+    }
+
+    public String getDatumRodjenjaString() {
+        return mDatumRodjenjaString;
+    }
+
+    public void setDatumRodjenjaString(String datumRodjenjaString) {
+        mDatumRodjenjaString = datumRodjenjaString;
     }
 }

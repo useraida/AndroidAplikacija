@@ -28,6 +28,7 @@ public class NajLicnostBaseHelper extends SQLiteOpenHelper{
                 NajLicnostTable.Kolone.UUID + ", " +
                 NajLicnostTable.Kolone.ImeIPrezime + ", " +
                 NajLicnostTable.Kolone.DatumRodjenja + ", " +
+                NajLicnostTable.Kolone.DatumRodjenjaString + ", " +
                 NajLicnostTable.Kolone.MjestoRodjenja + ", " +
                 NajLicnostTable.Kolone.ZnacajniPodaci + ")"
         );

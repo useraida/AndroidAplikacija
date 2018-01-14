@@ -19,8 +19,8 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fragment);
         FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
-        // moze vec postojati ako se npr prilikom rotacije prekine aktivnost, onda svu tu listu fragmenata
-        // sa id-em preuzima FragmantManager, i prilikom ponovnog kreiranja aktivnosti stvara se novi
+        // moze vec postojati ako se prilikom rotacije prekine aktivnost, onda svu tu listu fragmenata
+        // sa id-em preuzima FragmentManager, i prilikom ponovnog kreiranja aktivnosti stvara se novi
         // FragmentManager koji preuzima tu listu i vraca se sve na staro
         if (fragment == null) {
             fragment = createFragment();

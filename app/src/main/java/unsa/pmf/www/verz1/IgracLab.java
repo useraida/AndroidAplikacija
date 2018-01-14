@@ -35,13 +35,21 @@ public class IgracLab {
     private IgracLab(Context context)
     {
         mContext = context.getApplicationContext();
+        // getWritableDatabase() radi sljedece: otvara data/data/unsa.pmf.wwww.verz1/databases/IgracdbSchema
+        // kreirajuci novi database file ako ne postoji
+        // ako je baza prvi put kreirana, poziva onCreate(SQLiteDatabase), i zatim sacuva zadnju verziju
+        // ako baza nije prvi put kreirana, onda provjerava verziju u bazi. Ako je verzija u IgracBaseHelper visa,
+        // pozovi onUpgrade(SQLiteDatabase, int, int)
         mBazaPodataka = new IgracBaseHelper(mContext).getWritableDatabase();
-
     }
 
     public void dodajIgraca(Igrac i)
     {
         ContentValues values = getContentValues(i);
+        // null parametar:
+        // ukoliko odlucimo da pozovemo insert sa praznim ContentValues(), SQLite nece to dozvoliti, tako da insert() moze pasti
+        // ako proslijedimo vrijednost uuid-a za nullColumnHack, to bi ignorisalo prazne ContentValues. Umjesto toga,
+        // proslijedio bi u ContentValues sa uuid postavljenim na null. To bi omogucilo da insert (...) uspije i kreira novi red
         mBazaPodataka.insert(IgracTable.IME, null, values);
     }
 
@@ -92,11 +100,14 @@ public class IgracLab {
     {
         String uuidString = igrac.getId().toString();
         ContentValues values = getContentValues(igrac);
+        // treci argument od upadte predstavlja where clause, jer se mora znati koji se red tacno azurira
         mBazaPodataka.update(IgracTable.IME, values, IgracTable.Kolone.UUID + " = ?", new String[] {uuidString});
     }
 
+
     private IgracCursorWrapper queryIgraci(String whereClause, String[] whereArgs)
     {
+        // citanje podataka iz baze vrsi se pomocu guery-a
         Cursor cursor = mBazaPodataka.query(
                 IgracTable.IME,
                 null, // kolone - null selektira sve kolone
@@ -115,13 +126,15 @@ public class IgracLab {
         ContentValues values = new ContentValues();
         values.put(IgracTable.Kolone.UUID, igrac.getId().toString());
         values.put(IgracTable.Kolone.ImeIPrezime, igrac.getNaziv());
-        values.put(IgracTable.Kolone.DatumRodjenja, igrac.getDatumRodjenja());
         values.put(IgracTable.Kolone.MjestoRodjenja, igrac.getMjestoRodjenja());
-        values.put(IgracTable.Kolone.DatumUlaskaUKlub, igrac.getDatumUlaskaUKlub());
+        values.put(IgracTable.Kolone.DatumRodjenja, igrac.getDatumRodjenja().getTime());
+        values.put(IgracTable.Kolone.DatumUlaskaUKlub, igrac.getDatumUlaskaUKlub().getTime());
         values.put(IgracTable.Kolone.PozicijaIgraca, igrac.getPozicijaIgraca());
         values.put(IgracTable.Kolone.PrethodniKlub, igrac.getPrethodniKlub());
-        values.put(IgracTable.Kolone.Datum, igrac.getDatum().getTime());
         values.put(IgracTable.Kolone.PrviTim, igrac.isPrviTim() ? 1 : 0);
+        values.put(IgracTable.Kolone.DatumRodjenjaString, igrac.getDatumRodjenjaString());
+        values.put(IgracTable.Kolone.DatumUlaskaUKlubString, igrac.getDatumUlaskaUKlubString());
+        values.put(IgracTable.Kolone.Slika, igrac.getSlika());
 
         return values;
     }
